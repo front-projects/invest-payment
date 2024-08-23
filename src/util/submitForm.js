@@ -32,7 +32,7 @@ export const submitForm = async (data, mode, tgid) => {
 
       const responseData = await response.json();
       console.log(responseData);
-      return "https://whalesfederation.tech";
+      return "https://blockcreater.com";
       // console.log(responseData)
     } catch (error) {
       console.error("Error:", error);
