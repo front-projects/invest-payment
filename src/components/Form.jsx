@@ -103,9 +103,9 @@ export default function Form({ onError }) {
             <BackButton />
             <div className="font-semibold text-xl text-center border-b-2 p-2 mb-4">
               Pay via preferable crypto
-              <div className="text-sm text-[#9c27b0]">
+              {/* <div className="text-sm text-[#9c27b0]">
                 ~from whale project devs~
-              </div>
+              </div> */}
             </div>
             {isSubmitting ? (
               <div className="w-full flex items-center text-center pt-4 px-2 font-semibold text-xl flex-col gap-4">
