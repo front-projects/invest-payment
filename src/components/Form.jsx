@@ -41,7 +41,7 @@ export default function Form({ onError }) {
     if (!email || email.trim() === "") {
       errors.push("email");
     }
-    if (!amount || amount < 12) {
+    if (!amount || amount < 25) {
       errors.push("amount");
     }
     if (amount > balance && mode == "withdraw") {
@@ -131,14 +131,14 @@ export default function Form({ onError }) {
                   className={`font-semibold p-1 ${error.includes("amount") ? "text-red-600" : "text-gray-700 "}`}
                 >
                   Enter an amount{" "}
-                  <span className="text-[13px] text-gray-500">(min - 12$)</span>
+                  <span className="text-[13px] text-gray-500">(min - 25$)</span>
                 </h3>
                 <InputElement
                   required
                   type="number"
                   max={balance ? balance : 9999}
                   step="0.0001"
-                  min={12}
+                  min={25}
                   placeholder="Amount in USD"
                   onChange={(e) => setAmount(e.target.value)}
                 />
