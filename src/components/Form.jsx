@@ -109,9 +109,9 @@ export default function Form({ onError }) {
             </div>
             {isSubmitting ? (
               <div className="w-full flex items-center text-center pt-4 px-2 font-semibold text-xl flex-col gap-4">
-                Everything has been successfully completed. Now you can return
-                to the whales. Your withdrawal request is currently being
-                processed and should be completed shortly.
+                Everything has been successfully completed.Your withdrawal
+                request is currently being processed and should be completed
+                shortly.
                 <IoIosCheckmarkCircle className="text-[400%] text-[#9c27b0]" />
               </div>
             ) : (
